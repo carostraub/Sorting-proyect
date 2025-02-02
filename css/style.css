@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: green;
 }
 
 .card {
@@ -35,46 +36,95 @@ body {
     box-sizing: border-box;
 }
 
-.card .number.spades::before {
+.card.pica::before {
     content: '\2660';
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.card .number.spades::after {
+.card.pica::after {
     content: '\2660';
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.card .number.clubs::before {
+.card.trebol::before {
     content: '\2663';
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.card .number.clubs::after {
+.card.trebol::after {
     content: '\2663';
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.card .number.hearts::before {
+.card.corazon::before {
     content: '\2665';
     color: red;
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.card .number.hearts::after {
+.card.corazon::after {
     content: '\2665';
     color: red;
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.card .number.diams::before {
+.card.diamante::before {
     content: '\2666';
     color: red;
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.card .number.diams::after {
+.card.diamante::after {
     content: '\2666';
     color: red;
     transform: rotate(180deg);
     text-align: left;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
+#formulario {
+    padding: 5px;
+
+}
+#contenedor {
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center; 
+}
+#ordenadas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;  
+ }
+ #ordenadas .contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; 
+ }
+ h4 {
+    color: white;
+ } 
